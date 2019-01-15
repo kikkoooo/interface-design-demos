@@ -7,7 +7,7 @@ PFont font;
 float levels;
 
 void setup() {
-  size(800, 600, P2D);
+  size(800, 600);
   minim = new Minim(this);
   minim.debugOn();
   frameRate(30);

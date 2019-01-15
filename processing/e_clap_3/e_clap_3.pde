@@ -8,7 +8,7 @@ float levels;
 
 
 void setup() {
-  size(800, 600, P2D);
+  size(800, 600);
   minim = new Minim(this);
   minim.debugOn();
   frameRate(30);
@@ -23,21 +23,22 @@ void setup() {
 void draw() {
   
 
+  // Grabs the mic sound value 
   for(int i = 0; i < in.bufferSize() - 1; i++) {
     levels = in.mix.get(i)*200;
   }
   
-  if (levels > 10) {
-    //background(0,0,255);
+  if (levels > 20) {
+    background(0,0,255);
     fill(random(0,255),random(0,255),random(0,255));
     text("KIKKO", random(0,width), random(0,height));      
   } else {
-   //background(0,0,0);
-   // fill(random(0,255),random(0,255),random(0,255));
-   // text("KIKKO", random(0,width), random(0,height));      
+    background(0,0,0);
+    fill(random(0,255),random(0,255),random(0,255));
+    text("KIKKO", random(0,width), random(0,height));      
   }
-
-    //text("= " + levels, 10, 10);  
+    
+    println("= " + levels, 10, 10);
 
 }
 

@@ -12,6 +12,4 @@ void draw() {
     stroke(random(0,255),random(0,255),random(0,255));
     ellipse(random(0,width),random(0,height),random(0,width),random(0,height));
   }
-
-
 }

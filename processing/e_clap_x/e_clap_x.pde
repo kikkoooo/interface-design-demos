@@ -10,7 +10,7 @@ float levels;
 
 void setup()
 {
-  size(512, 200, P2D);
+  size(512, 200);
   minim = new Minim(this);
   minim.debugOn();
   

@@ -66,8 +66,10 @@ void draw() {
   if (faceXPos < width/4 ) {
     //Do stuff here...
     println("LEFT");
+    rect(random(0,width),random(0,width),random(0,width),random(0,width));
   } else if (faceXPos > width/4*3 ) {
     println("RIGHT"); 
+    line(random(0,width),random(0,width),random(0,width),random(0,width));
   } else {
     println("SAFE"); 
   }
