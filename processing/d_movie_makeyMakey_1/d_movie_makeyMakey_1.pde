@@ -37,7 +37,6 @@ void draw() {
     mov2.stop();
     image(mov3, 0, 0, width/2, height/2);
   }
-
 }
 
 void keyPressed() {

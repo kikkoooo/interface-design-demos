@@ -6,5 +6,4 @@
 
 grammar VIKI;
 
-public <VIKI> = ( How are you | Red | Blue | Green | Motor | Orange) * ;
-
+public <VIKI> = (How are you | Red | Blue | Green | Motor | Orange) * ;
